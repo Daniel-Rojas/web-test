@@ -34,6 +34,6 @@ RUN yum -y install bzip2
 RUN npm install
 #CMD ["ojet", "serve", "--server-only","--no-livereload"]
 
-CMD ["/bin/bash"]
+CMD ["ojet", "serve", "--server-only", "--no-livereload"]
 
 EXPOSE 8181
