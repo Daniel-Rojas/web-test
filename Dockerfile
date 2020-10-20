@@ -21,11 +21,12 @@ RUN node --version
 RUN npm install -g @oracle/ojet-cli
 
 # Copying tar and unzipping in image #
-COPY test-app/ ./
+ADD test-app /jet/test-app
 # RUN tar -xvf web.tar
 
 # Start up OJET #
 WORKDIR /jet/test-app
+RUN ls -l
 
 # PhantomJS Workaround #
 #RUN yum -y -qq update

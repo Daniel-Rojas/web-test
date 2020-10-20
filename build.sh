@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --tag drojas/sailgp-web-test:1.0 .
+docker build --no-cache --tag drojas/sailgp-web-test:1.0 .
